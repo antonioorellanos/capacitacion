@@ -16,4 +16,4 @@ use Illuminate\Http\Request;
 /*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });*/
-Route::get('/v1/ecuaciones/{tipo}/{a}/{b}/{c}', 'ecuaciones@index');
+Route::post('/v1/ecuaciones', 'ecuaciones@index');
